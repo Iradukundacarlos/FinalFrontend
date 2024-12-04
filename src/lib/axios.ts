@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "https://finalbackend-fpad.onrender.com";
+const baseURL = "https://finalbackend-fpad.onrender.com/api";
 
 export const axiosInstance = axios.create({
   baseURL,
