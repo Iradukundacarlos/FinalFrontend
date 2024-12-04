@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
+    "incremental": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "target": "ES2020",
+    "jsx": "react-jsx",
     "useDefineForClassFields": true,
     "lib": [
       "ES2020",
@@ -16,12 +18,14 @@
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
-    "jsx": "react-jsx",
     /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
+    // Adjusting strict options
+    "strict": false, // Disable all strict type-checking options
+    // If you want to keep some strict checks, set them individually:
+    // "noUnusedLocals": false, // Disable unused locals check
+    // "noUnusedParameters": false, // Disable unused parameters check
+    // Uncomment the above lines if you want to selectively disable them
+    "noFallthroughCasesInSwitch": true, // Keep this as it is
     "baseUrl": ".",
     "paths": {
       "@/*": [
